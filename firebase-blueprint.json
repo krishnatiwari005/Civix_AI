@@ -1,0 +1,49 @@
+{
+  "entities": [
+    {
+      "name": "User",
+      "description": "User profile in Civix AI",
+      "properties": {
+        "uid": { "type": "string", "description": "User unique identifier" },
+        "name": { "type": "string", "description": "Full name of the user" },
+        "email": { "type": "string", "description": "Email address" },
+        "role": { "type": "string", "description": "User role: citizen, authority, or admin" },
+        "points": { "type": "number", "description": "Reward points earned" },
+        "badge": { "type": "string", "description": "Current civic badge" },
+        "ward": { "type": "string", "description": "Ward location" },
+        "createdAt": { "type": "string", "description": "Account creation ISO timestamp" }
+      }
+    },
+    {
+      "name": "Issue",
+      "description": "Civic incident report",
+      "properties": {
+        "id": { "type": "string", "description": "Incident report ID" },
+        "title": { "type": "string", "description": "Incident title" },
+        "description": { "type": "string", "description": "Detailed incident description" },
+        "category": { "type": "string", "description": "Category of incident" },
+        "severity": { "type": "string", "description": "Severity level" },
+        "status": { "type": "string", "description": "Current resolution status" },
+        "reportedBy": { "type": "string", "description": "Reporter user UID" },
+        "ward": { "type": "string", "description": "Ward name" },
+        "latitude": { "type": "number", "description": "GPS latitude" },
+        "longitude": { "type": "number", "description": "GPS longitude" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" },
+        "updatedAt": { "type": "string", "description": "Last update timestamp" }
+      }
+    },
+    {
+      "name": "Notification",
+      "description": "User alert notification",
+      "properties": {
+        "id": { "type": "string", "description": "Notification ID" },
+        "userId": { "type": "string", "description": "Recipient user UID" },
+        "title": { "type": "string", "description": "Alert title" },
+        "message": { "type": "string", "description": "Alert message text" },
+        "type": { "type": "string", "description": "Notification type" },
+        "read": { "type": "boolean", "description": "Whether the notification has been read" },
+        "createdAt": { "type": "string", "description": "Creation timestamp" }
+      }
+    }
+  ]
+}

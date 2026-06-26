@@ -1,0 +1,6 @@
+{
+  "name": "Civix AI",
+  "description": "AI-powered civic issue management platform with intelligent duplicate detection, automatic department routing, and risk forecasting.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
